@@ -31,10 +31,41 @@
          <input type="radio" name="gender">Female
          <br><br>
 
-         <button>Submit</button>
-         
+         <label>Select course</label>
+         <select>
+            <option>--Select--</option>
+            <option>Mern Stack</option>
+            <option>Data Science</option>
+            <option>Cloud Computing</option>
+            <option>Search Engine Optimisation</option>
+         </select>
+         <br><br>
 
-         
+         <label>Select College</label>
+         <input type="text" list="college">
+
+         <datalist id="college">
+            <option>--Select--</option>
+            <option>LPCPS</option>
+            <option>BBDNIIT</option>
+            <option>BBDU</option>
+            <option>Integral</option>
+            <option>LU</option>
+            <option>AKTU</option>
+         </datalist>
+
+         <label>Date of birth</label>
+         <input type="date">
+         <br><br>
+
+         <input type="checkbox">
+         <label>Accept Terms & Conditions</label>
+
+         <details>
+            <summary>View Terms & Conditions</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error nesciunt rerum eveniet, dolore assumenda natus voluptate eligendi aperiam odit delectus amet qui, quod voluptatem nostrum incidunt vel quisquam earum.</p>
+         </details>
+         <button>Submit</button>      
     </form>
 </body>
 </html>
