@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie ticket Form</title>
-        <style>
-            
-        </style>
+    <style>
+        body{
+            background-color:gray;
+            text-align: center;
+        }
+        label{
+            color:maroon;
+        }
+        input{
+            color:brown;
+            background-color:rgb(240, 214, 128);
+        }
+        select{
+            color:brown;
+            background-color:rgb(240, 214, 128);
+        }
+        button{
+            color:white;
+            background-color: blue;
+        }
+        text{
+            color: maroon;
+            background-color:rgb(240, 214, 128) ;
+        }
+    </style>
+
 </head>
-</html>
-</body>
+<body>
     <h1>Movie Ticket Form</h1>
     <form>
-        <img src="data:image/jpeg;base64,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" alt="">
+        <img src="https://images.mid-day.com/images/images/2023/may/bloddydaddmainposter_d.jpg" alt="" height="300px"width="250px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Co622SjQAvZhNeodH5tN1CeuhD_guiXy3l7n3nL_Mx7f83FMvAcIo6B_c9M27lfkgFg&usqp=CAU" alt=""height="300px"width="250px">
+        <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2023/12/mv5bnduxntayzmetzjmxns00mda0ltk0ntetztmxm2vlndm3ymvmxkeyxkfqcgdeqxvyndexmzmxnje-_v1_.jpg" alt=""height="300px"width="250px">
         <br><br>
-        <title>Movie Title</title>
-        <label for="Movie" Movie Name>Movie Title:</label>
-        <select>Movie</select>
-        <input type="text" required minlength="20">
+        <label>Movie Title:</label>
+        <select id="Movie Title">
+            <option>--Select--</option>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Arabic</option>
+            <option>Marathi</option>
+            <option>Telgu</option>
+            <option>Tamil</option>
+         </select>
         <br><br>
 
         <label>Select Movie</label>
-        <input type="text" list="Movie">
-        <datalist id="Movie">
+        <select id="Movie">
             <option>--select--</option>
             <option>DDLJ</option>
             <option>3Idiots</option>
@@ -30,12 +59,12 @@
             <option>Ready</option>
             <option>Wanted</option>
             <option>Dabangg</option>
-         </datalist>
+         </select>
 
 
         <label for="Date">The date you want to attend:</label>
-        <input type="date">
-        <label for="Time"time>What time suits you?</label>
+        <input type="date"required>
+        <label for="Time">What time suits you?</label>
         <input type="time"required>
         <br><br>
 
@@ -58,18 +87,36 @@
 
         <br><br>
 
-        <label for="email">Email Address:</label>
-        <input type="email"required>
-        <br><br>
-
         <label for="name">Reservation Name:</label>
-        <input type="text"First required>
-        <input type="text"Last required>
+        <input type="text"placeholder="First Name"required>
+        <input type="text"placeholder="Last Name"required>
         <br><br>
         
+        <label for="number">Mobile No:</label>
+        <input type="number"placeholder="Enter your mobile no"required>
+        <br><br>
+        <label for="email">Email Address:</label>
+        <input type="email"placeholder="Enter your email here"required>
+        <br><br>
+
+        <label for="payment">Choose your payment options:</label>
+        <select>
+            <option value="--Select--">--Select--</option>
+            <option value="Googlepay">Googlepay</option>
+            <option value="Paytm">Paytm</option>
+            <option value="Phonepay">Phonepay</option>
+            <option value="NetBanking">Netbanking</option>
+        </select>
+        <button>Paynow</button>
         <label for="verification">Verification:</label>
         <input type="checkbox"robot>I'm not a robot
+        <details>
+            <summary>View Terms & Conditions</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error nesciunt rerum eveniet, dolore assumenda natus voluptate eligendi aperiam odit delectus amet qui, quod voluptatem nostrum incidunt vel quisquam earum.</p>
+         </details>
         <button>Submit</button> 
     </form>
+
+    <label class="color"></label>
 </body>
 </html>
