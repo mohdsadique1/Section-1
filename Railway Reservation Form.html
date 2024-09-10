@@ -1,163 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railway Reservation Form</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            background-color:gray;
+        body {
+            background-color: gray;
             flex-direction: row;
             justify-content: center;
         }
-        label{
-            color:maroon;
+
+        label {
+            color: maroon;
         }
-        input{
-            color:black;
-            background-color:rgb(240, 214, 128);
+
+        input {
+            color: black;
+            background-color: rgb(240, 214, 128);
         }
-        select{
-            color:black;
-            background-color:rgb(240, 214, 128);
+
+        select {
+            color: black;
+            background-color: rgb(240, 214, 128);
         }
-        button{
-            color:white;
+
+        button {
+            color: white;
             background-color: blue;
         }
-        text{
+
+        text {
             color: maroon;
-            background-color:black ;
+            background-color: black;
         }
     </style>
 
 </head>
+
 <body>
     <div class="form">
-    <form>
-        <h1>Railway Reservation Form</h1>
-        <label for="name">Name:</label>
-        <input type="text"placeholder="Enter your name here"required>
-        <br><br>
+        <form>
+            <h1>Railway Reservation Form</h1>
+            <div style="display: flex;">
+                <label style="width: 30%;" for="name">Name:</label>
+                <input style="width: 70%;" type="text" placeholder="Enter your name here" required>
+            </div>
 
-        <label for="number/name">Train no./train name:</label>
-        <select id="train">
-            <option value="--Select--">--Select--</option>
-            <option value="Vaishali Exp./12553/54">Vaishali Exp./12553/54</option>
-            <option value="Gorakhdham SF Exp./12555/55">Gorakhdham SF Exp./12555/56</option>
-            <option value="Intercity Exp./12331/32">Intercity Exp./12531/32</option>
-            <option value="Raptisagar SF Exp./12511/12">Raptisagar SF Exp./12511/12</option>
-        </select>
-        <br><br>
+            <br><br>
 
-           <label>Date of Journey:</label>
-           <input type="date">
-           <br><br>
+            <label for="number/name">Train no./train name:</label>
+            
+            <select id="train">
+                <option value="--Select--">--Select--</option>
+                <option value="Vaishali Exp./12553/54">Vaishali Exp./12553/54</option>
+                <option value="Gorakhdham SF Exp./12555/55">Gorakhdham SF Exp./12555/56</option>
+                <option value="Intercity Exp./12331/32">Intercity Exp./12531/32</option>
+                <option value="Raptisagar SF Exp./12511/12">Raptisagar SF Exp./12511/12</option>
+            </select>
+            <br><br>
 
-        <label for="class of travel">Class of travel:</label>
-        <select id="class">
-           <option value="--Select--">--Select--</option>
-           <option value="First AC">Ist/AC</option>
-           <option value="Second AC">IInd/AC</option>
-           <option value="Third AC">IIIrd/AC</option>
-           <option value="Sleeper">SL</option>
-           <option value="Chaircar">CC</option>
-        </select>   
-        <br><br>
-        <label>Station From:</label>
-        <select id="station">
-            <option value="--Select--">--Select--</option>
-            <option value="BST">Basti</option>
-            <option value="LKW">Lucknow</option>
-            <option value="GKP">Gorakhpur</option>
-            <option value="CNB">Kanpur</option>
-            <option value="PNBE">Patna</option>
-        </select>
-        <br><br>
+            <label>Date of Journey:</label>
+            <input type="date">
+            <br><br>
 
-        <label>Station To:</label>
-        <select id="station">
-            <option value="--Select--">--Select--</option>
-            <option value="BST">Basti</option>
-            <option value="LKW">Lucknow</option>
-            <option value="GKP">Gorakhpur</option>
-            <option value="CNB">Kanpur</option>
-            <option value="PATNA">Patna</option>
-        </select>
-        <br><br>
+            <label for="class of travel">Class of travel:</label>
+            <select id="class">
+                <option value="--Select--">--Select--</option>
+                <option value="First AC">Ist/AC</option>
+                <option value="Second AC">IInd/AC</option>
+                <option value="Third AC">IIIrd/AC</option>
+                <option value="Sleeper">SL</option>
+                <option value="Chaircar">CC</option>
+            </select>
+            <br><br>
+            <label>Station From:</label>
+            <select id="station">
+                <option value="--Select--">--Select--</option>
+                <option value="BST">Basti</option>
+                <option value="LKW">Lucknow</option>
+                <option value="GKP">Gorakhpur</option>
+                <option value="CNB">Kanpur</option>
+                <option value="PNBE">Patna</option>
+            </select>
+            <br><br>
 
-        <label>Number Of Passenger:</label>
-        <input type="number"required>
+            <label>Station To:</label>
+            <select id="station">
+                <option value="--Select--">--Select--</option>
+                <option value="BST">Basti</option>
+                <option value="LKW">Lucknow</option>
+                <option value="GKP">Gorakhpur</option>
+                <option value="CNB">Kanpur</option>
+                <option value="PATNA">Patna</option>
+            </select>
+            <br><br>
 
-        <h2>Passenger Details:</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>S.No.</th>
-                    <th>Name of passenger</th>
-                    <th>Age</th>
-                    <th>Gender(M/F)</th>
-                    <th>Birth prefrence</th>
-                    <th>Concession(if any)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <td>1</td>
-                <td>MOHD SADIQUE</td>
-                <td>26</td>
-                <td>M</td>
-                <td>Lower</td>
-                <td>No</td>
-            </tbody>
-            <tbody>
-                <td>2</td>
-                <td>MOHD RAZIQUE</td>
-                <td>27</td>
-                <td>M</td>
-                <td>Lower</td>
-                <td>No</td>
-            </tbody>
-            <tbody>
-                <td>3</td>
-                <td>MOHD SHOYEB</td>
-                <td>24</td>
-                <td>M</td>
-                <td>Lower</td>
-                <td>No</td>
-            </tbody>
-            <br>
-        </table>
+            <label>Number Of Passenger:</label>
+            <input type="number" required>
 
-        <h2>Contact Information:</h2>
-        <label for="number">Mobile No:</label>
-        <input type="tel"placeholder="Enter your Mobile No."required>
-        <label for="email">Email address(optional):</label>
-        <input type="text"placeholder="Enter your email addresss"optional>
-        <br><br>
+            <h2>Passenger Details:</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name of passenger</th>
+                        <th>Age</th>
+                        <th>Gender(M/F)</th>
+                        <th>Birth prefrence</th>
+                        <th>Concession(if any)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>MOHD SADIQUE</td>
+                    <td>26</td>
+                    <td>M</td>
+                    <td>Lower</td>
+                    <td>No</td>
+                </tbody>
+                <tbody>
+                    <td>2</td>
+                    <td>MOHD RAZIQUE</td>
+                    <td>27</td>
+                    <td>M</td>
+                    <td>Lower</td>
+                    <td>No</td>
+                </tbody>
+                <tbody>
+                    <td>3</td>
+                    <td>MOHD SHOYEB</td>
+                    <td>24</td>
+                    <td>M</td>
+                    <td>Lower</td>
+                    <td>No</td>
+                </tbody>
+                <br>
+            </table>
 
-        <h2>Concession/Other Details:</h2>
-        <label for=""if any>Purpose of concession(if any):</label>
-        <input type="text">
-        <br><br>
+            <h2>Contact Information:</h2>
+            <label for="number">Mobile No:</label>
+            <input type="tel" placeholder="Enter your Mobile No." required>
+            <label for="email">Email address(optional):</label>
+            <input type="text" placeholder="Enter your email addresss" optional>
+            <br><br>
 
-        <h2>Payment Information:</h2>
-        <h3>Mode of payment:</h3>
-        <ul>
-            <li>Cash</li>
-            <input type="checkbox" name="cash" id="">
-           <li>Credit/debit</li>
-           <input type="checkbox" name="card" id="">
-           <li>UPI</li>
-           <input type="checkbox" name="online" id="">
-           <li>Other:</li>
-           <input type="checkbox" name="" id="">
-        </ul>
-        <br><br>
+            <h2>Concession/Other Details:</h2>
+            <label for="" if any>Purpose of concession(if any):</label>
+            <input type="text">
+            <br><br>
 
-        <h2>Signature of the applicant</h2>
-        <input type="signature">
-    </form>
+            <h2>Payment Information:</h2>
+            <h3>Mode of payment:</h3>
+            <ul>
+                <li>Cash</li>
+                <input type="checkbox" name="cash" id="">
+                <li>Credit/debit</li>
+                <input type="checkbox" name="card" id="">
+                <li>UPI</li>
+                <input type="checkbox" name="online" id="">
+                <li>Other:</li>
+                <input type="checkbox" name="" id="">
+            </ul>
+            <br><br>
+
+            <h2>Signature of the applicant</h2>
+            <input type="signature">
+        </form>
     </div>
 </body>
+
 </html>

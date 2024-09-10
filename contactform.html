@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .card{
+    /* border: 2px solid red; */
+    width: 20%;
+    box-shadow: 3px 3px 5px 2px #00000080;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color:gray;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: brown;
+    background-size: cover;
+
+}
+
+.form-title{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+}
+.text-input{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.text-area{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.number-input{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.submit-btn{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <h3 class="form-title">Contact us</h3>
+        <form>
+   
+           <label>Your Name:</label><br>
+           <input type="text" placeholder="First Name" class="text-input">
+           <input type="text" placeholder="Last Name"  class="text-input">
+           <label>Email Address:</label><br>
+           <input type="text"placeholder="Example@gmail.com" class="text-input">
+           <label>Mobile Number:</label><br>
+           <input type="number"placeholder="+91 0000000000" class="number-input">
+           <label>Message:</label><br>
+           <textarea rows="4"placeholder="Please enter your comments..." cols="20" class="text-area" ></textarea>
+
+           <button class="submit-btn">Submit</button>
+
+   
+</body>
+</html>
