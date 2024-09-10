@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railway Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body{
             background-color:gray;
@@ -12,11 +13,11 @@
             color:maroon;
         }
         input{
-            color:gray;
+            color:black;
             background-color:rgb(240, 214, 128);
         }
         select{
-            color:gray;
+            color:black;
             background-color:rgb(240, 214, 128);
         }
         button{
@@ -25,12 +26,13 @@
         }
         text{
             color: maroon;
-            background-color:rgb(240, 214, 128) ;
+            background-color:black ;
         }
     </style>
 
 </head>
 <body>
+    <div class="form">
     <form>
         <h1>Railway Reservation Form</h1>
         <label for="name">Name:</label>
@@ -84,7 +86,7 @@
         <br><br>
 
         <label>Number Of Passenger:</label>
-        <input type="number"required><hr>
+        <input type="number"required>
 
         <h2>Passenger Details:</h2>
         <table border="1">
@@ -98,7 +100,6 @@
                     <th>Concession(if any)</th>
                 </tr>
             </thead>
-            <br><br>
             <tbody>
                 <td>1</td>
                 <td>MOHD SADIQUE</td>
@@ -106,7 +107,6 @@
                 <td>M</td>
                 <td>Lower</td>
                 <td>No</td>
-                <br><br>
             </tbody>
             <tbody>
                 <td>2</td>
@@ -115,7 +115,6 @@
                 <td>M</td>
                 <td>Lower</td>
                 <td>No</td>
-                <br><br>
             </tbody>
             <tbody>
                 <td>3</td>
@@ -124,9 +123,8 @@
                 <td>M</td>
                 <td>Lower</td>
                 <td>No</td>
-                <br><br>
             </tbody>
-            <br><br>
+            <br>
         </table>
 
         <h2>Contact Information:</h2>
@@ -142,17 +140,22 @@
         <br><br>
 
         <h2>Payment Information:</h2>
-        <h3>Mode of payment</h3>
+        <h3>Mode of payment:</h3>
         <ul>
             <li>Cash</li>
+            <input type="checkbox" name="cash" id="">
            <li>Credit/debit</li>
+           <input type="checkbox" name="card" id="">
            <li>UPI</li>
+           <input type="checkbox" name="online" id="">
            <li>Other:</li>
+           <input type="checkbox" name="" id="">
         </ul>
         <br><br>
 
         <h2>Signature of the applicant</h2>
         <input type="signature">
     </form>
+    </div>
 </body>
 </html>
