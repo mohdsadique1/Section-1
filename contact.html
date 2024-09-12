@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .child {
+            border: 2px solid red;
+            width: 200px;
+            padding: 30px;
+        }
+
+        .child h1 {
+            text-align: center;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+
+            /* justify-content: flex-end; */
+            justify-content: space-between;
+
+            align-items: flex-end;
+
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="child">
+            <h1>1</h1>
+        </div>
+
+        <div class="child">
+            <h1>2</h1>
+        </div>
+
+        <div class="child">
+            <h1>3</h1>
+        </div>
+    </div>
+
+    <div style="border: 2px solid red; width: 30%; margin: 50px; padding: 30px;">
+
+        <label for="">Full Name</label>
+
+        <div style=" display: flex; gap: 10px;">
+            <input type="text" style="width: 100%;">
+            <input type="text" style="width: 100%;">
+
+        </div>
+
+        <div>
+            <button style="margin: auto; margin-top: 10px; display: block; ">submit</button>
+        </div>
+
+        <textarea style="width: 100%; resize: horizontal;" rows="5" name="" id=""></textarea>
+
+    </div>
+
+
+</body>
+
+</html>

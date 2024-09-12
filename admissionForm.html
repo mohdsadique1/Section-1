@@ -4,34 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Form</title>
+    <style>
+        .card{
+    /* border: 2px solid red; */
+    width: 20%;
+    box-shadow: 3px 3px 5px 2px #00000080;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color:gray;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: brown;
+    background-size: cover;
+
+}
+
+.form-title{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+}
+.text-input{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.text-area{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.number-input{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: #ffafbf;
+    outline: none;
+}
+.submit-btn{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+}
+    </style>
 </head>
 <body>
-
+   <div class="card">
     <h1>Student Admission Form</h1>
     <form>
 
-         <label>Student Name</label>
+         <label>Student Name:</label>
          <input type="text" required minlength="4">
          <br><br>
 
-         <label>Email Address</label>
+         <label>Email Address:</label>
          <input type="email" required>
          <br><br>
 
-         <label>Mobile No.</label>
+         <label>Mobile No:</label>
          <input type="Mobile number" required>
          <br><br>
 
-         <label>Address</label>
+         <label>Address:</label>
          <textarea rows="4" cols="20" ></textarea>
          <br><br>
 
-         <label>Gender</label>
+         <label>Gender:</label>
          <input type="radio" name="gender">Male
          <input type="radio" name="gender">Female
          <br><br>
 
-         <label>Select course</label>
+         <label>Select course:</label>
          <select>
             <option>--Select--</option>
             <option>Mern Stack</option>
@@ -41,7 +112,7 @@
          </select>
          <br><br>
 
-         <label>Select College</label>
+         <label>Select College:</label>
          <input type="text" list="college">
 
          <datalist id="college">
@@ -54,7 +125,7 @@
             <option>AKTU</option>
          </datalist>
 
-         <label>Date of birth</label>
+         <label>Date of birth:</label>
          <input type="date">
          <br><br>
 

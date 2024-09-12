@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Plan</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 1px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: flex-start;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aquamarine;
+            color: #333;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .pricing-section {
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .pricing-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .pricing-section p {
+            font-size: 1rem;
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .billing-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .billing-toggle label {
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-container{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 80%;
+            gap: 50px;
+
+        }
+
+        .pricing-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            margin-bottom:10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+
+        .pricing-card .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .pricing-card button:hover {
+            text-decoration: dashed;
+            background-color: #0056b3;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pricing-section">
+        <h1>Choose Your Plan</h1>
+        <p>Be the first to know when boarding launches.Early access users will receive an extended free trial and early
+            bird pricing options.</p>
+
+        <div class="billing-card">
+            <label>
+                <input type="radio" name="billing" checked> Billed monthly
+
+            </label>
+            <label>
+                <input type="radio" name="billing"> Billed annually
+            </label>
+        </div>
+
+        <div class="card-container">
+
+            <div class="pricing-card">
+                <h2>Free</h2>
+                <h1 class="price">$0</h1>
+                <ul>
+                    <li>500 request</li>
+                    <li>Unlimited projects</li>
+                    <li><span class="highlight">extended free trial</span> for early users</li>
+                </ul>
+                <button>Create Account</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Standard</h2>
+                <h1 class="Price">$99/month</h1>
+                <select>
+                    <option>2500 request</option>
+                </select>
+                <ul>
+                    <li>2500 request</li>
+                    <li>monthly active user</li>
+                    <li>Unlimited projects</li>
+                    <li><span class="highlight">extended free trial</span> for early users</li>
+                </ul>
+                <button>Create Account</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Enterprise</h2>
+                <h1 class="price">Let's Talk!</h1>
+                <ul>
+                    <li>500 request</li>
+                    <li>Unlimited projects</li>
+                    <li><span class="highlight">extended free trial</span> for early users</li>
+                </ul>
+                <button>Create Account</button>
+            </div>
+        </div>
+
+    
+    </section>
+</body>
+
+</html>
