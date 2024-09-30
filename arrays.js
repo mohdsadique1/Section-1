@@ -23,3 +23,4 @@ console.log( movies);
 
 console.log( movies.slice(1, 4));
 console.log( movies.slice(2));
+console.log( movies.slice(-3));
